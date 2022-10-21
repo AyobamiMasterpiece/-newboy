@@ -447,3 +447,273 @@ marginLeft:35
     flexDirection:'row'
   }
 });
+////////////////////////////////
+
+
+
+
+
+
+
+
+
+/////////////////////////
+import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
+import { Pressable, StyleSheet, Text, TouchableNativeFeedback, View } from 'react-native';
+
+export default function App() {
+
+  const[ripple,setripple]=useState(false)
+  return (
+    <View style={styles.container}>
+      <View style={styles.cac}></View>
+    
+      <StatusBar  />
+      <View style={styles.press}>
+
+
+      
+<View style= {styles.rows}>
+  <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={styles.text}>7</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+     
+      <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={styles.text}>8</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+      <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={styles.text}>9</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+      <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={[styles.text]}>-</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+
+
+
+
+
+      </View>
+
+
+
+
+
+
+
+
+
+
+      
+      <View style= {styles.rows}>
+  <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={styles.text}>4</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+     
+      <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={styles.text}>5</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+      <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={styles.text}>6</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+      <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={[styles.text]}>+</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+
+
+
+
+
+      </View>
+
+
+
+      
+      <View style= {styles.rows}>
+  <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={styles.text}>1</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+     
+      <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={styles.text}>2</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+      <TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('black',ripple)}
+  
+  >
+    <View style={styles.textcontainer}>
+    <Text style={styles.text}>3</Text>
+      </View>  
+      </TouchableNativeFeedback>
+
+
+<View style={{backgroundColor:'white',marginLeft:30,padding:16,marginTop:38,borderRadius:10,paddingBottom:29}}>
+<TouchableNativeFeedback
+  onPress={()=>{setripple(!ripple)}}
+  background={TouchableNativeFeedback.Ripple('pink',ripple)}
+  
+  >
+    
+    <Text style={styles.text}>=</Text>
+    
+      </TouchableNativeFeedback>
+
+</View>
+
+
+      </View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </View>
+     
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor:'pink'
+    
+    
+  },
+  cac:{
+flex:1,
+backgroundColor:'white'
+  },
+  press:{
+    flex:1.5,
+    backgroundColor:'darkblue',
+    
+    
+  },
+  text:{
+    fontSize:35
+  },
+  textcontainer:{
+margin:25,
+marginLeft:35
+
+  },
+  rows:{
+    flexDirection:'row'
+  }
+});
